@@ -1,13 +1,13 @@
-1. ÜRÜN YÜKLEME : Satışa çıkarılan ürünlerin bilgilerini girip siteye konulması. 
+1. KULLANICI KAYIT :  Kullanıcıların alışveriş sitesine ister yeni hesap oluşturarak isterse önceden oluşturmuş olduğu bilgilerle giriş yapmasını sağlar
 
-2. ÜRÜN FOTOĞRAFI : Satışa çıkarılan ürünlerin görsellerinin siteye yüklenmesi. 
+2. HESAP SİLME : Oluşturduğunuz kullanıcı hesabınızı kalıcı olarak kaldırma işlemidir. 
 
-3. ÜRÜN AÇIKLAMASI: Satışa çıkarılacak ürünlerin açıklanması için bilgilerinin girilmesi. 
+3. GİRİŞ YAPMA : Kullanıcıların onlardan istenilen bilgilere göre hizmetlere ulaşmak için istenilen kimlik doğrulama sürecidir 
 
-4. ÜRÜN BEDENİ: Kullanıcının kendine uygun bedeni tercih etmesi için beden seçeneklerinin sunulması. 
+4. ÇIKIŞ YAPMA :  Kullanıcıların giriş bilgileriyle girdiği sitemizden güvenli bir şekilde çıkış yapma işlemidir 
 
-5. ÜRÜN RENGİ: Kullanıcların tercih edecekleri ürünün renk seçenekleridir. 
+5. FAVORİLER : Kullanıcıların beğendikleri ürünlerin tutulup listelendiği yerdir. 
 
-6. ÜRÜN SİLME: Satışı veya stoğu biten ürünlerin silinmesi. 
+6. FAVORİLER ÜRÜN EKLEME : Kullanıcıların beğendikleri ürünleri favoriler kısmına eklenmesi. 
 
-7. SEPET : Kullanıcıların seçtikleri ürünleri satın almak için ekledikleri bölümdür. 
+7. FAVORİLERDEN ÜRÜN SİLME : Kullanıcıların favorilerden ürün silmesi.
