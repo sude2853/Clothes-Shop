@@ -1,6 +1,6 @@
 # Gereksinimler
 1. Kullanıcı Yönetimi (kullanıcı kayıt , giriş çıkış)
-2. Anasayfa (Arama, Kadın, Erkek, Bebek, Aksesuar)
+2. Ürün Listeleme (Arama, Kadın, Erkek, Bebek, Aksesuar)
 3. Ürün Yükleme
 4. Ürün Silme
 5. Ürün Fiyat Ekleme
@@ -15,46 +15,44 @@
 
 # TÜM GEREKSİNİM DAĞILIMLARI 
 
-1. Kullanıcı Kayıt :  Kullanıcıların alışveriş sitesine ister yeni hesap oluşturarak isterse önceden oluşturmuş olduğu bilgilerle giriş yapmasını sağlar  
+1. KULLANICI KAYIT :  Kullanıcıların alışveriş sitesine ister yeni hesap oluşturarak isterse önceden oluşturmuş olduğu bilgilerle giriş yapmasını sağlar
 
-2. GİRİŞ YAPMA : Kullanıcıların onlardan istenilen bilgilere göre hizmetlere ulaşmak için istenilen kimlik doğrulama sürecidir 
+2. HESAP SİLME : Oluşturduğunuz kullanıcı hesabınızı kalıcı olarak kaldırma işlemidir. 
 
-3. ÇIKIŞ YAPMA :  Kullanıcıların giriş bilgileriyle girdiği sitemizden güvenli bir şekilde çıkış yapma işlemidir  
+3. GİRİŞ YAPMA : Kullanıcıların onlardan istenilen bilgilere göre hizmetlere ulaşmak için istenilen kimlik doğrulama sürecidir 
 
-4. ANASAYFA : Sitemizde girişte gözükecek ve kullanıcıları kendi istekleri doğrultusunda istedikleri yere yönlendirilmek için bulunan bölmelerdir 
+4. ÇIKIŞ YAPMA :  Kullanıcıların giriş bilgileriyle girdiği sitemizden güvenli bir şekilde çıkış yapma işlemidir 
 
-5. KADIN : Kadınlara yönelik ürünlerin bulunduğu bölümdür. Kullanıcıların buraya tıklayarak istedikleri ürünlerin sayfasına gideceği yerdir. 
+5. KATEGORİYE GÖRE ÜRÜN ARAMA : Kullanıcıların ürün adını, özelliklerinii veya kategorisini yazarak ürünü bulma işlemidir.
 
-6. ERKEK : Erkeklere yönelik ürünlerin bulunduğu bölümdür. Kullanıcıların buraya tıklayarak istedikleri ürünlerin sayfasına gideceği yerdir. 
+6. KADIN ÜRÜNLERİ LİSTELEME : Kadınlara yönelik ürünlerin bulunduğu bölümdür. Kullanıcıların buraya tıklayarak istedikleri ürünlerin sayfasına gideceği yerdir. 
 
-7. BEBEK : Bebeklere yönelik ürünlerin bulunduğu bölümdür. Kullanıcıların buraya tıklayarak istedikleri ürünlerin sayfasına gideceği yerdir. 
+7. ERKEK ÜRÜNLERİ LİSTELEME : Erkeklere yönelik ürünlerin bulunduğu bölümdür. Kullanıcıların buraya tıklayarak istedikleri ürünlerin sayfasına gideceği yerdir. 
 
-8. AKSESUAR : Kullanıcıların sitede bulunan aksesuarları görmek için kullanabileceği bölümdür. 
+8. BEBEK ÜRÜNLERİ LİSTELEME : Bebeklere yönelik ürünlerin bulunduğu bölümdür. Kullanıcıların buraya tıklayarak istedikleri ürünlerin sayfasına gideceği yerdir. 
 
-9. ÜRÜN YÜKLEME : Satışa çıkarılan ürünlerin bilgilerini girip siteye konulması. 
+9. AKSESUAR ÜRÜNLERİ LİSTELEME : Kullanıcıların sitede bulunan aksesuarları görmek için kullanabileceği bölümdür. 
 
-10. ÜRÜN FOTOĞRAFI : Satışa çıkarılan ürünlerin görsellerinin siteye yüklenmesi. 
+10. ÜRÜN YÜKLEME : Satışa çıkarılan ürünlerin bilgilerini girip siteye konulması. 
 
-11. ÜRÜN AÇIKLAMASI: Satışa çıkarılacak ürünlerin açıklanması için bilgilerinin girilmesi. 
+11. ÜRÜNE FOTOĞRAF EKLEME : Satışa çıkarılan ürünlerin görsellerinin siteye yüklenmesi.
 
-12. ÜRÜN BEDENİ: Kullanıcının kendine uygun bedeni tercih etmesi için beden seçeneklerinin sunulması. 
+12. ÜRÜN BEDENİNE GÖRE LİSTELE : Kullanıcının kendine uygun bedeni tercih etmesi için beden seçeneklerinin sunulması. 
 
-13. ÜRÜN RENGİ: Kullanıcların tercih edecekleri ürünün renk seçenekleridir. 
+13. ÜRÜN RENGİNE GÖRE FİLTRELEME : Kullanıcların tercih edecekleri ürünün renk seçenekleridir. 
 
-14. ÜRÜN SİLME: Satışı veya stoğu biten ürünlerin silinmesi. 
+14. ÜRÜN SİLME: Satışı veya stoğu biten ürünlerin silinmesi.  
 
-15. SEPET : Kullanıcıların seçtikleri ürünleri satın almak için ekledikleri bölümdür. 
+15. SEPETİ GÖRÜNTÜLEME : Kullanıcıların sepet bölümüne yönlendirilmesi. 
 
-16. SEPETE GİTME : Kullanıcıların sepet bölümüne yönlendirilmesi. 
+16. SEPETE  ÜRÜN EKLEME : Kullanıcıların seçtikleri ürünleri satın alma işlemine geçmek için eklemeleridir. 
 
-17. SEPETE  ÜRÜN EKLEME : Kullanıcıların seçtikleri ürünleri satın alma işlemine geçmek için eklemeleridir. 
+17. SEPETTEN ÜRÜN SİLME : Kullanıcıların daha önceden sepete eklemiş oldukları üründen vazgeçerek sepetten ürün kaldırma işlemidir. 
 
-18. SEPETTEN ÜRÜN SİLME : Kullanıcıların daha önceden sepete eklemiş oldukları üründen vazgeçerek sepetten ürün kaldırma işlemidir. 
+18. ÖDEME YAPMA : Kullanıcıların seçtikleri ürünleri satın almak için geçilen ödeme adımıdır. 
 
-19. ÖDEME ADIMINA GEÇME: Kullanıcıların seçtikleri ürünleri satın almak için geçilen ödeme adımıdır. 
+19. FAVORİLER : Kullanıcıların beğendikleri ürünlerin tutulup listelendiği yerdir. 
 
-20. FAVORİLER : Kullanıcıların beğendikleri ürünlerin tutulup listelendiği yerdir. 
+20. FAVORİLER ÜRÜN EKLEME : Kullanıcıların beğendikleri ürünleri favoriler kısmına eklenmesi. 
 
-21. FAVORİLER ÜRÜN EKLEME : Kullanıcıların beğendikleri ürünleri favoriler kısmına eklenmesi. 
-
-22. FAVORİLERDEN ÜRÜN SİLME : Kullanıcıların favorilerden ürün silmesi.
+21. FAVORİLERDEN ÜRÜN SİLME : Kullanıcıların favorilerden ürün silmesi.
