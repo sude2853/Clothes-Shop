@@ -25,5 +25,5 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 1. [Gereksinim Analizi](Gereksinim-Analizi.md)
 2. [Durum Diyagramı](https://github.com/sude2853/Clothes-Shop/blob/2036235600d60f2bf1f7780826d46d38d78bc28b/Durum%20Diyagram%C4%B1%20(2).png)
 3. [Sude Ceylan Durum Senaryosu](https://github.com/sude2853/Clothes-Shop/blob/aae4c2b0b24807cbdde4e8ca006274f944213d21/Durum%20Senaryosu.pdf)
-4. [Ali Işık Durum Senaryosu](https://github.com/sude2853/Clothes-Shop/blob/79d26fe2ceba5cb7c7f49c8315bf5d5b29a7fee8/Ali%20I%C5%9F%C4%B1k%20Durum%20Senaryosu.pdf)
-5. [İsa Nazlı Durum Senaryosu](https://github.com/sude2853/Clothes-Shop/blob/75b73d0b71147e2d01fe9b051b01527b1f6678ef/%C4%B0sa%20Nazl%C4%B1%20Durum%20Senaryosu.pdf)
+4. [Ali Işık Durum Senaryosu](https://github.com/Ask-com/Clothes-Shop/blob/9f1aa114e71e9f5927801cf10eed824e23e59a52/_Durum%20Senaryolar%C4%B1.pdf)
+5. [İsa Nazlı Durum Senaryosu](https://github.com/isanazli0/Clothes-Shop/blob/74083c24ee6e22d20a23ee16e01d3f5486ffeb48/Durum-Senaryosu.pdf)
