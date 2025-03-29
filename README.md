@@ -26,4 +26,5 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 
 2. .[Durum Senaryosu][(Durum Senaryosu.pdf)](https://github.com/sude2853/Clothes-Shop/commit/e91d7ee5390ae969c3445c4a36f8833c319eb9e5#diff-3da3f0bd557177872374aecb015623c74eb506e9714814e048f5918a94e880a4)
 3. [Durum Diyagramı][(Durum Diyagramı (2).png](https://github.com/sude2853/Clothes-Shop/blob/2a9ea4dcecd5597d1b195a6a0cace0a78f3388f0/Durum%20Diyagram%C4%B1%20(2).png))
+4. [Ali Işık Durum Senaryosu](https://github.com/sude2853/Clothes-Shop/blob/79d26fe2ceba5cb7c7f49c8315bf5d5b29a7fee8/Ali%20I%C5%9F%C4%B1k%20Durum%20Senaryosu.pdf)
 
