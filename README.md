@@ -23,5 +23,8 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 **Proje Ekibi:** Ali Işık, İsa Nazlı, Sude Ceylan
 
 1. [Gereksinim Analizi](Gereksinim-Analizi.md)
-2..[Durum Senaryosu][(Durum Diyagramı (2).png)](https://github.com/sude2853/Clothes-Shop/commit/e91d7ee5390ae969c3445c4a36f8833c319eb9e5#diff-3da3f0bd557177872374aecb015623c74eb506e9714814e048f5918a94e880a4)
+
+2. .[Durum Senaryosu][(Durum Senaryosu.pdf)](https://github.com/sude2853/Clothes-Shop/commit/e91d7ee5390ae969c3445c4a36f8833c319eb9e5#diff-3da3f0bd557177872374aecb015623c74eb506e9714814e048f5918a94e880a4)
+3. 
+2..[Durum Senaryosu][(Durum Senaryosu.pdf)](https://github.com/sude2853/Clothes-Shop/commit/e91d7ee5390ae969c3445c4a36f8833c319eb9e5#diff-3da3f0bd557177872374aecb015623c74eb506e9714814e048f5918a94e880a4)
    3.[Durum Diyagramı(2).png]Durum Diyagramı (2).png)
