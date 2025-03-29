@@ -23,4 +23,4 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 **Proje Ekibi:** Ali Işık, İsa Nazlı, Sude Ceylan
 
 1. [Gereksinim Analizi](Gereksinim-Analizi.md)
-
+3.[Durum Diyagramı](Durum Diyagramı (2).png)
