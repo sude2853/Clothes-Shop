@@ -27,3 +27,6 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 3. [Sude Ceylan Durum Senaryosu](https://github.com/sude2853/Clothes-Shop/blob/aae4c2b0b24807cbdde4e8ca006274f944213d21/Durum%20Senaryosu.pdf)
 4. [Ali Işık Durum Senaryosu](https://github.com/Ask-com/Clothes-Shop/blob/9f1aa114e71e9f5927801cf10eed824e23e59a52/_Durum%20Senaryolar%C4%B1.pdf)
 5. [İsa Nazlı Durum Senaryosu](https://github.com/isanazli0/Clothes-Shop/blob/74083c24ee6e22d20a23ee16e01d3f5486ffeb48/Durum-Senaryosu.pdf)
+
+
+#SİTE ADRESİ İÇİN = https://ask-com.github.io/Clothes-Shop/kadin.html
