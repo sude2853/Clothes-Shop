@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bebek</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="global-notification">
+            <div class="container">
+                <p>
+                    <a href="kadin.html">Clothes Shop – Tarz seninle başlar.</a>
+
+                </p>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="header-mobile">
+                        <i class="bi bi-list" id="btn-menu"></i>
+                    </div>
+                    <div class="header-left">
+                        <a href="kadin.html" class="logo">Clothes Shop</a>
+                    </div>
+                    <div class="header-center" id="sidebar">
+                        <nav class="navigation">
+                            <ul class="menu-list">
+                                <li class="menu-list-item">
+                                    <a href="kadin.html" class="menu-link">
+                                        KADIN
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <div class="menu-dropdown-wrapper">
+                                        <ul class="menu-dropdown-content">
+                                            <li>
+                                                <a href="#">Elbise</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Etek</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jean</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Body</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item megamenu-wrapper">
+                                    <a href="erkek.html" class="menu-link">
+                                        ERKEK
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <div class="menu-dropdown-wrapper">
+                                        <div class="menu-dropdown-megamenu">
+                                            <div class="megamenu-links">
+                                                <div class="megamenu-products">
+
+                                                    <ul class="megamenu-menu-list">
+                                                        <li>
+                                                            <a href="#">Tshirt</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Jean</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Ceket</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Gömlek</a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="menu-list-item megamenu-wrapper">
+                                    <a href="bebek.html" class="menu-link">
+                                        BEBEK
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <div class="menu-dropdown-wrapper">
+                                        <div class="menu-dropdown-megamenu">
+                                            <div class="megamenu-links">
+                                                <div class="megamenu-products">
+
+                                                    <ul class="megamenu-menu-list">
+                                                        <li>
+                                                            <a href="#">Kız Bebek</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Erkek Bebek</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Zıbın</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <a href="aksesuar.html" class="menu-link">
+                                      AKSESUAR
+                                      <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <div class="menu-dropdown-wrapper">
+                                      <div class="menu-dropdown-megamenu">
+                                        <div class="megamenu-links">
+                                          <div class="megamenu-products">
+                  
+                                            <ul class="megamenu-menu-list">
+                                              <li>
+                                                <a href="#">Kolye</a>
+                                              </li>
+                                              <li>
+                                                <a href="#">Küpe</a>
+                                              </li>
+                                              <li>
+                                                <a href="#">Bilek</a>
+                                              </li>
+                                              <li>
+                                                <a href="#">Yüzük</a>
+                                              </li>
+                  
+                                            </ul>
+                                          </div>
+                  
+                  
+                                        </div>
+                                      </div>
+                                  </li>
+                                </li>
+                            </ul>
+                        </nav>
+                        <i class="bi-x-circle" id="close-sidebar"></i>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-right-links">
+                            <a href="hesap.html" class="header-account">
+                                <i class="bi bi-person"></i>
+                            </a>
+                            <button class="search-button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <a href="#">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <div class="header-cart">
+                                <a href="sepet.html" class="header-cart-link">
+                                    <i class="bi bi-bag"></i>
+                                    <span class="header-cart-count">0</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal-search">
+        <div class="modal-wrapper">
+            <h3 class="modal-title">Ürün Ara</h3>
+            <p class="modal-text">Aradığınız Ürünleri Görmek İçin Yazmaya Başlayın</p>
+            <form class="search-form">
+                <input type="text" placeholder="Ürün Ara">
+                <button>
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <div class="search-results">
+                <div class="search-heading">
+                    <h3>Ürün Sonuçları</h3>
+                </div>
+                <div class="results">
+                    <a href="#" class="result-item">
+                        <img src="img/products/product1/1.png" class="search-thumb" alt="">
+                        <div class="search-info">
+                            <h4>Gri Ceket</h4>
+
+                            <span class="search-price">1499 TL</span>
+                        </div>
+                    </a>
+                    <a href="#" class="result-item">
+                        <img src="img/products/product2/1.png" class="search-thumb" alt="">
+                        <div class="search-info">
+                            <h4>Kırmızı Ceket</h4>
+
+                            <span class="search-price">800 TL</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <i class="bi bi-x-circle" id="close-search"></i>
+        </div>
+    </div>
+
+    <section class="blogs blog-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>BEBEK ÜRÜNLERİMİZ</h2>
+                <p>En Tatlı Ve Şık Bebek Ürünlerimiz</p>
+            </div>
+            <ul class="blog-list">
+                <li class="blog-item">
+                    <a href="#" class="blog-image">
+                        <img src="img/avatars/img/kızbebek1.png" alt="">
+                    </a>
+                    <div class="blog-info">
+                        <div class="blog-info-top">
+                        </div>
+                        <div class="blog-info-center">
+                            <div class="search-info">
+
+                            </div>
+                            <h3>Kırmızı Kız Bebek Elbise</h3>
+                            <div class="search-info">
+
+
+                                <span class="search-price">800 TL</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="blog-item">
+                    <a href="#" class="blog-image">
+                        <img src="img/avatars/img/erkekbebek1.png" alt="">
+                    </a>
+                    <div class="blog-info">
+                        <div class="search-info">
+
+                        </div>
+                        <h3>Bej Erkek Bebek Tulum</h3>
+                        <div class="search-info">
+
+
+                            <span class="search-price">400 TL</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="blog-item">
+                    <a href="#" class="blog-image">
+                        <img src="img/avatars/img/kızbebek.png" alt="">
+                    </a>
+                    <div class="blog-info">
+                        <div class="search-info">
+
+                        </div>
+                        <h3>Unisex Tulum</h3>
+                        <div class="search-info">
+
+
+                            <span class="search-price">500 TL</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="blog-item">
+                    <a href="#" class="blog-image">
+                        <img src="img/avatars/img/kızbebek2.png" alt="">
+                    </a>
+                    <div class="blog-info">
+                        <div class="search-info">
+
+                        </div>
+                        <h3>Sarı Çiçekli Kız Bebek Elbise</h3>
+                        <div class="search-info">
+
+
+                            <span class="search-price">500 TL</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="blog-item">
+                    <a href="#" class="blog-image">
+                        <img src="img/avatars/img/zıbın1.png" alt="">
+                    </a>
+                    <div class="blog-info">
+                        <div class="search-info">
+
+                        </div>
+                        <h3>Unisex Tulum</h3>
+                        <div class="search-info">
+
+
+                            <span class="search-price">600 TL</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="blog-item">
+                    <a href="#" class="blog-image">
+                        <img src="img/avatars/img/erkekbebek2.png" alt="">
+                    </a>
+                    <div class="blog-info">
+                        <div class="search-info">
+
+                        </div>
+                        <h3>Erkek Bbek Alt Üst Takım</h3>
+                        <div class="search-info">
+
+
+                            <span class="search-price">900 TL</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="policy">
+        <div class="container">
+            <ul class="policy-list">
+                <li class="policy-item">
+                    <i class="bi bi-truck"></i>
+                    <div class="policy-texts">
+                        <strong>KARGO BEDAVA</strong>
+                        <span>3 İş Gününde Kargoda</span>
+                    </div>
+                </li>
+
+                <li class="policy-item">
+                    <i class="bi bi-arrow-clockwise"></i>
+                    <div class="policy-texts">
+                        <strong> 30 GÜN İÇİNDE İADE</strong>
+                        <span>Otuz Gün İçinde İade Edebilirsiniz</span>
+                    </div>
+                </li>
+                <li class="policy-item">
+                    <i class="bi bi-credit-card"></i>
+                    <div class="policy-texts">
+                        <strong> ÖDEME YÖNTEMİ</strong>
+                        <span>Güvenli Ödeme</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="widgets-row">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="brand-info">
+                        <div class="footer-logo">
+                            <a href="kadin.html" class="logo">CHLOTES SHOP</a>
+                        </div>
+                        <div class="footer-desc">
+                            <p> Şikyet ve Önerileriniz İçin.</p>
+                        </div>
+                        <div class="footer-contact">
+                            <p>
+                                <a href="tel:555 555 55 55">(+90) 5419379833</a> – <a
+                                    href="mailto:info@example.com">sudeceylan48@icloudcom</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
