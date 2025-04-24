@@ -8,6 +8,59 @@
     <title>Aksesuarlar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/main.css" />
+
+
+    <meta charset="UTF-8">
+    <title>Favoriler Sayfası</title>
+
+    <!-- Modal Stili -->
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #favoritesList li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        #favoritesList button {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 3px 6px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -62,7 +115,7 @@
                                         <div class="menu-dropdown-megamenu">
                                             <div class="megamenu-links">
                                                 <div class="megamenu-products">
-                                        
+
                                                     <ul class="megamenu-menu-list">
                                                         <li>
                                                             <a href="#">Tshirt</a>
@@ -75,7 +128,8 @@
                                                         </li>
                                                         <li>
                                                             <a href="#">Gömlek</a>
-                                                        </li>                                                       </ul>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,7 +144,7 @@
                                         <div class="menu-dropdown-megamenu">
                                             <div class="megamenu-links">
                                                 <div class="megamenu-products">
-                  
+
                                                     <ul class="megamenu-menu-list">
                                                         <li>
                                                             <a href="#">Kız Bebek</a>
@@ -101,12 +155,12 @@
                                                         <li>
                                                             <a href="#">Zıbın</a>
                                                         </li>
-                  
-                  
+
+
                                                     </ul>
                                                 </div>
-                  
-                  
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +173,7 @@
                                             <div class="menu-dropdown-megamenu">
                                                 <div class="megamenu-links">
                                                     <div class="megamenu-products">
-    
+
                                                         <ul class="megamenu-menu-list">
                                                             <li>
                                                                 <a href="#">Kolye</a>
@@ -133,11 +187,11 @@
                                                             <li>
                                                                 <a href="#">Yüzük</a>
                                                             </li>
-    
+
                                                         </ul>
                                                     </div>
-    
-    
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -147,7 +201,7 @@
                         </nav>
                         <i class="bi-x-circle" id="close-sidebar"></i>
                     </div>
-                    <div class="header-right">      
+                    <div class="header-right">
                         <div class="header-right-links">
                             <a href="hesap.html" class="header-account">
                                 <i class="bi bi-person"></i>
@@ -155,7 +209,7 @@
                             <button class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
-                            <a href="#">
+                            <a href="#" id="favoriteToggle">
                                 <i class="bi bi-heart"></i>
                             </a>
                             <div class="header-cart">
@@ -206,7 +260,7 @@
             <i class="bi bi-x-circle" id="close-search"></i>
         </div>
     </div>
-    
+
     <section class="blogs blog-page">
         <div class="container">
             <div class="section-title">
@@ -371,6 +425,65 @@
         </div>
     </footer>
     <script src="js/main.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+    <!-- 1️⃣ MODAL ÖNCE GELİR (HTML kısmı çünkü JS onu kullanacak) -->
+    <div id="favoritesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFavorites()">&times;</span>
+            <h3>Favorilerim</h3>
+            <ul id="favoritesList">
+                <!-- Dinamik favori ürün listesi buraya gelir -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- 2️⃣ SONRA JAVASCRIPT (modalı ve fonksiyonları çalıştırmak için) -->
+    <script>
+        let favorites = [];
+
+        document.getElementById("favoriteToggle").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("favoritesModal").style.display = "block";
+            displayFavorites();
+        });
+
+        function closeFavorites() {
+            document.getElementById("favoritesModal").style.display = "none";
+        }
+
+        function addToFavorites(productName) {
+            if (!favorites.includes(productName)) {
+                favorites.push(productName);
+                alert(productName + " favorilere eklendi.");
+            } else {
+                alert(productName + " zaten favorilerde.");
+            }
+            displayFavorites();
+        }
+
+        function removeFromFavorites(productName) {
+            favorites = favorites.filter(item => item !== productName);
+            displayFavorites();
+        }
+
+        function displayFavorites() {
+            const list = document.getElementById("favoritesList");
+            list.innerHTML = "";
+
+            if (favorites.length === 0) {
+                list.innerHTML = "<li>Favori ürün bulunamadı.</li>";
+            } else {
+                favorites.forEach(product => {
+                    list.innerHTML += `<li>${product} 
+                    <button onclick="removeFromFavorites('${product}')">Kaldır</button>
+                </li>`;
+                });
+            }
+        }
+    </script>
+
+    <!-- 3️⃣ Sayfa kapanış etiketi -->
+
 </body>
 
 </html>
