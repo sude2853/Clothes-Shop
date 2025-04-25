@@ -35,4 +35,4 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 
 #[Frontend](https://sude2853.github.io/clothesshop.live)
 #[Frontend](https://clothesshop.live)
-#[Frontend](https://sude2853.github.io/clothesshop.live/kadin.html)
+#[Frontend](https://sude2853.github.io/Clothes-Shop/kadin.html)
