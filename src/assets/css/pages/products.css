@@ -1,0 +1,22 @@
+.products-wrapper {
+    padding: 2rem 10rem;
+}
+
+.products-wrapper-inner {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.products-selector {
+    border: 2px solid #1367ef;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+@media (max-width: 567px) {
+    .products-wrapper {
+        padding: 2rem 2rem;
+    }
+}

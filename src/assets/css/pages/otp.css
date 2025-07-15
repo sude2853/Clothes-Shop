@@ -1,0 +1,48 @@
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.otp-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.otp {
+    padding: 8px;
+    width: 25%;
+    border: 1px solid #1367ef;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.otp-button {
+    padding: 8px 24px;
+    background-color: #1367ef;
+    width: 25%;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .otp {
+        width: 80%;
+    }
+
+    .otp-button {
+        width: 80%;
+    }
+}

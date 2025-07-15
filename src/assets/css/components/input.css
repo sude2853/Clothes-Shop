@@ -1,0 +1,13 @@
+.input label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    row-gap: 5px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .input {
+        flex-direction: column;
+    }
+}

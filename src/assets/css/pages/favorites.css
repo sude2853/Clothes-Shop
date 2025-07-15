@@ -1,0 +1,9 @@
+.favorites-wrapper {
+    margin: 2rem 10rem;
+}
+
+@media (max-width: 420px) {
+    .favorites-wrapper {
+        margin: 2rem;
+    }
+}
