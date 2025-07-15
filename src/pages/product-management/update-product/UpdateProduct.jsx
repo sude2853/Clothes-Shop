@@ -7,7 +7,13 @@ import {
     getProductById,
     updateProduct,
 } from '../../../services/productService';
-import { categoryData, COLORS, filterConfig, SIZES } from '../../../util/data';
+import {
+    categoryData,
+    categoryFilterData,
+    COLORS,
+    filterConfig,
+    SIZES,
+} from '../../../util/data';
 import { uploadImageToImgbb } from '../../../services/imageService';
 
 import { pushToast } from '../../../util/toast';
@@ -259,7 +265,13 @@ function UpdateProduct() {
                     <p>Kategori</p>
                     <select
                         className="input"
-                        value={product?.category.toUpperCase()}
+                        value={
+                            categoryFilterData.find(
+                                (item) =>
+                                    item?.value ===
+                                    product?.category?.toLowerCase()
+                            )?.value
+                        }
                         onChange={(e) => {
                             const category = e.target.value;
                             setProduct({
@@ -272,9 +284,9 @@ function UpdateProduct() {
                         }}
                     >
                         <option value="">-- Seçiniz --</option>
-                        {Object.keys(categoryData).map((cat) => (
-                            <option key={cat} value={cat}>
-                                {cat}
+                        {categoryFilterData?.map((cat) => (
+                            <option key={cat?.value} value={cat.value}>
+                                {cat.name}
                             </option>
                         ))}
                     </select>
@@ -321,7 +333,7 @@ function UpdateProduct() {
                                 ))}
                             </select>
 
-                            {filterConfig[product?.category].size && (
+                            {filterConfig[product?.category]?.size && (
                                 <>
                                     <p>Beden</p>
                                     <select

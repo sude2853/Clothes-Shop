@@ -4,7 +4,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import { pushToast } from '../../../util/toast';
-import { categoryData, COLORS, filterConfig, SIZES } from '../../../util/data';
+import {
+    categoryData,
+    categoryFilterData,
+    COLORS,
+    filterConfig,
+    SIZES,
+} from '../../../util/data';
 
 import { uploadImageToImgbb } from '../../../services/imageService';
 import { createProduct } from '../../../services/productService';
@@ -123,10 +129,16 @@ function CreateProduct() {
     return (
         <div className="create-product-wrapper">
             <div className="section-title-start">
-                <h2>Ürün Ekle</h2>
+                <h2>Ürün Güncelle</h2>
                 <div className="inner-container">
-                    {product.image1 && (
-                        <img src={URL.createObjectURL(product.image1)} />
+                    {product?.image1 && (
+                        <img
+                            src={
+                                typeof product.image1 === 'string'
+                                    ? product.image1
+                                    : URL.createObjectURL(product.image1)
+                            }
+                        />
                     )}
                     <p>Ürün Resmi (1)</p>
                     <input
@@ -136,8 +148,14 @@ function CreateProduct() {
                         className="image-selector"
                         onChange={(e) => handleFileChange(e, 'image1')}
                     />
-                    {product.image2 && (
-                        <img src={URL.createObjectURL(product.image2)} />
+                    {product?.image2 && (
+                        <img
+                            src={
+                                typeof product.image2 === 'string'
+                                    ? product.image2
+                                    : URL.createObjectURL(product.image2)
+                            }
+                        />
                     )}
                     <p>Ürün Resmi (2)</p>
                     <input
@@ -149,7 +167,7 @@ function CreateProduct() {
                     />
                     <p>Ürün Adı</p>
                     <input
-                        value={product.title}
+                        value={product?.title}
                         required={true}
                         className="input"
                         onChange={(e) =>
@@ -158,7 +176,7 @@ function CreateProduct() {
                     />
                     <p>Ürün Açıklaması</p>
                     <input
-                        value={product.description}
+                        value={product?.description}
                         required={true}
                         className="input"
                         onChange={(e) =>
@@ -170,7 +188,7 @@ function CreateProduct() {
                     />
                     <p>Ürün Fiyatı</p>
                     <input
-                        value={product.price}
+                        value={product?.price}
                         required={true}
                         className="input"
                         type="number"
@@ -184,14 +202,14 @@ function CreateProduct() {
                     />
                     <p>
                         Ürün İndirim Yüzdesi{' '}
-                        {product.discount &&
+                        {product?.discount &&
                             `(İndirimli fiyat: ${(
-                                (product.price * (100 - product.discount)) /
+                                (product?.price * (100 - product?.discount)) /
                                 100
                             ).toFixed(2)} TL )`}
                     </p>
                     <input
-                        value={product.discount}
+                        value={product?.discount}
                         required={true}
                         className="input"
                         type="number"
@@ -216,7 +234,7 @@ function CreateProduct() {
                     />
                     <p>Ürün Stok Miktarı</p>
                     <input
-                        value={product.stock}
+                        value={product?.stock}
                         required={true}
                         className="input"
                         step={1}
@@ -243,7 +261,13 @@ function CreateProduct() {
                     <p>Kategori</p>
                     <select
                         className="input"
-                        value={product.category}
+                        value={
+                            categoryFilterData.find(
+                                (item) =>
+                                    item?.value ===
+                                    product?.category?.toLowerCase()
+                            )?.value
+                        }
                         onChange={(e) => {
                             const category = e.target.value;
                             setProduct({
@@ -256,19 +280,19 @@ function CreateProduct() {
                         }}
                     >
                         <option value="">-- Seçiniz --</option>
-                        {Object.keys(categoryData).map((cat) => (
-                            <option key={cat} value={cat}>
-                                {cat}
+                        {categoryFilterData?.map((cat) => (
+                            <option key={cat?.value} value={cat.value}>
+                                {cat.name}
                             </option>
                         ))}
                     </select>
 
-                    {product.category && (
+                    {product?.category && (
                         <>
                             <p>Alt Kategori</p>
                             <select
                                 className="input"
-                                value={product.subCategory}
+                                value={product?.subCategory}
                                 onChange={(e) =>
                                     setProduct({
                                         ...product,
@@ -277,7 +301,9 @@ function CreateProduct() {
                                 }
                             >
                                 <option value="">-- Seçiniz --</option>
-                                {categoryData[product.category].map((item) => (
+                                {categoryData[
+                                    product.category.toUpperCase()
+                                ].map((item) => (
                                     <option key={item.name} value={item.name}>
                                         {item.value}
                                     </option>
@@ -287,7 +313,7 @@ function CreateProduct() {
                             <p>Renk</p>
                             <select
                                 className="input"
-                                value={product.color}
+                                value={product?.color}
                                 onChange={(e) =>
                                     setProduct({
                                         ...product,
@@ -297,19 +323,18 @@ function CreateProduct() {
                             >
                                 <option value="">-- Seçiniz --</option>
                                 {COLORS.map((item) => (
-                                    <option key={item} value={item}>
-                                        {item}
+                                    <option key={item.name} value={item.name}>
+                                        {item.value}
                                     </option>
                                 ))}
                             </select>
 
-                            {filterConfig[product.category.toLowerCase()]
-                                .size && (
+                            {filterConfig[product?.category]?.size && (
                                 <>
                                     <p>Beden</p>
                                     <select
                                         className="input"
-                                        value={product.size}
+                                        value={product?.size}
                                         onChange={(e) =>
                                             setProduct({
                                                 ...product,
@@ -320,7 +345,7 @@ function CreateProduct() {
                                         <option value="">-- Seçiniz --</option>
                                         {SIZES.map((item) => (
                                             <option key={item} value={item}>
-                                                {item}
+                                                {item.toUpperCase()}
                                             </option>
                                         ))}
                                     </select>
@@ -328,7 +353,7 @@ function CreateProduct() {
                             )}
                         </>
                     )}
-                    <button onClick={handleSubmit}>Oluştur</button>
+                    <button onClick={handleSubmit}>Ürün Ekle</button>
                 </div>
             </div>
         </div>
