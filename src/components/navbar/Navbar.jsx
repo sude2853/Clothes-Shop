@@ -27,7 +27,8 @@ const Navbar = () => {
                 isSearchOpen &&
                 searchRef.current &&
                 !searchRef.current.contains(e.target) &&
-                e.target.className !== 'bi bi-x-circle'
+                e.target.className !== 'bi bi-x-circle' &&
+                !e.target.className?.startsWith('nav-bar-search-item')
             ) {
                 setIsSearchOpen(false);
                 setSearchText('');
@@ -133,7 +134,7 @@ const Navbar = () => {
                                         {searchResults.map((product) => (
                                             <a
                                                 key={product._id}
-                                                href={`/urun/${product._id}`}
+                                                href={`/urunler/${product._id}`}
                                                 className="nav-bar-search-item"
                                             >
                                                 <img
@@ -142,7 +143,9 @@ const Navbar = () => {
                                                     className="nav-bar-search-item-image"
                                                 />
                                                 <div>
-                                                    <div>{product.title}</div>
+                                                    <div className="nav-bar-search-item-title">
+                                                        {product.title}
+                                                    </div>
                                                     <div className="nav-bar-search-item-price">
                                                         {product.price} TL
                                                     </div>
