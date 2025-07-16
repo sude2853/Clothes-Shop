@@ -209,7 +209,7 @@ function ProductDetail() {
                                 </p>
                             )}
                             <p>Stok: {product?.stock}</p>
-                            {product?.discount && (
+                            {product?.discount !== 0 && (
                                 <p>İndirim: %{product?.discount}</p>
                             )}
                         </div>

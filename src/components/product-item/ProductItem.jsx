@@ -131,21 +131,6 @@ const ProductItem = ({ product, route }) => {
                 <a href="#" className="product-title">
                     {product.title}
                 </a>
-                <ul className="product-star">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                        <li key={i}>
-                            <i
-                                className={`bi ${
-                                    i < Math.floor(product.rating)
-                                        ? 'bi-star-fill'
-                                        : i < product.rating
-                                        ? 'bi-star-half'
-                                        : 'bi-star'
-                                }`}
-                            ></i>
-                        </li>
-                    ))}
-                </ul>
                 <div className="product-prices">
                     <strong className="new-price">
                         {(product.price * (100 - product.discount)) / 100} TL
