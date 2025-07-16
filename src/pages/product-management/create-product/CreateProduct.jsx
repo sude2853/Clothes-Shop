@@ -129,7 +129,7 @@ function CreateProduct() {
     return (
         <div className="create-product-wrapper">
             <div className="section-title-start">
-                <h2>Ürün Güncelle</h2>
+                <h2>Ürün Ekle</h2>
                 <div className="inner-container">
                     {product?.image1 && (
                         <img
