@@ -69,10 +69,14 @@ function ProductManagement() {
                         <p className="discount">
                             İndirim Oranı: {item.discount}%
                         </p>
-                        <p className="price">Fiyat: {item.price}</p>
+                        <p className="price">Fiyat: {item.price} TL</p>
                         <p className="price">
                             İndirimli Fiyat:{' '}
-                            {(item.price * (100 - item.discount)) / 100}
+                            {(
+                                (item.price * (100 - item.discount)) /
+                                100
+                            ).toFixed(2)}{' '}
+                            TL
                         </p>
                     </div>
                     <div className="right-section">

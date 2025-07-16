@@ -133,7 +133,11 @@ const ProductItem = ({ product, route }) => {
                 </a>
                 <div className="product-prices">
                     <strong className="new-price">
-                        {(product.price * (100 - product.discount)) / 100} TL
+                        {(
+                            (product.price * (100 - product.discount)) /
+                            100
+                        ).toFixed(2)}{' '}
+                        TL
                     </strong>
                     {product.discount !== 0 && (
                         <span className="old-price">{product.price}TL</span>
