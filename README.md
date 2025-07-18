@@ -28,8 +28,7 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 4. [Ali Işık Durum Senaryosu](https://github.com/Ask-com/Clothes-Shop/blob/9f1aa114e71e9f5927801cf10eed824e23e59a52/_Durum%20Senaryolar%C4%B1.pdf)
 5. [İsa Nazlı Durum Senaryosu](https://github.com/isanazli0/Clothes-Shop/blob/74083c24ee6e22d20a23ee16e01d3f5486ffeb48/Durum-Senaryosu.pdf)
 
-#SİTE ADRESİ İÇİN = [Frontend](https://ask-com.github.io/Clothes-Shop/kadin.html)
+#SİTE ADRESİ İÇİN = [Frontend](https://clothes-shop-opal.vercel.app/)
 
-#SİTE ADRESİ İÇİN = https://ask-com.github.io/Clothes-Shop/kadin.html
 
-#[Frontend](https://clothes-shop-opal.vercel.app/)
+#
