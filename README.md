@@ -31,4 +31,4 @@ Sen de stilini tamamlamak ve modanın bir adım önünde olmak için Clothes Sho
 #SİTE ADRESİ İÇİN = [Frontend](https://clothes-shop-opal.vercel.app/)
 
 
-#
+#Youtube Video Linki (https://youtu.be/qvJZjffsZV0?si=__x9GUPUljihTX3K)
